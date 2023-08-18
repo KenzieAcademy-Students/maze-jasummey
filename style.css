@@ -1,1 +1,51 @@
-/* Write your CSS Here. */
+html {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.maze {
+  display: grid;
+  grid-template-columns: repeat(21, 30px);
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall {
+  background-color: #333;
+}
+
+.floor {
+  background-color: #eee;
+}
+
+.start {
+  background-color: #00ff00;
+}
+
+.finish {
+  background-color: #ff0000;
+}
+
+.player {
+  background-color: #0000ff;
+  color: white;
+  border-radius: 50%;
+}
+
+.message {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
