@@ -25,6 +25,24 @@ const mazeMap1 = [
   "WWWWWWWWWWWWWWWWWWWWW",
 ];
 
+const mazeMap2 = [
+  "WWWWWWWWWWWWWSWWWWWWW",
+  "W   W     W     W   W",
+  "W W W WWW WWWWW W WWW",
+  "W W W  W      W W   W",
+  "W WWWWWWW W WWW W W W",
+  "W         W     W W W",
+  "W WWW WWWWW WWWWW W W",
+  "W W   W   W W     W W",
+  "W WWWWW W W W WWW W W",
+  "W     W W W W W W WWW",
+  "WWWWW W W W W W W W W",
+  "W     W W W   W W W W",
+  "W WWWWWWW WWWWW W W W",
+  "W       W       W   W",
+  "WWWWWWWWWWWWWWWWWWFWW",
+];
+
 const sokobanMapSample = [
   // FOR TESTING PURPOSES ONLY. Don't use this map
   " WWWWWW ", // as one of the choices in your game.
@@ -45,8 +63,6 @@ const sokobanMap1 = [
   "W   O  W",
   "WWWWWWWW",
 ];
-
-// Your Code Here.
 
 // Select maze map based on user's choice
 const mazeSelect = document.getElementById("mazeSelect");
@@ -119,8 +135,9 @@ function movePlayer(direction) {
 
 function displayWinMessage() {
   const message = document.createElement("div");
-  message.textContent = "Congratulations! You've completed the maze!";
-  message.style.color = "green";
+  message.classList.add("message");
+  message.textContent = "You win! You have made it to the end!";
+  message.style.color = "purple";
   mazeContainer.appendChild(message);
 }
 

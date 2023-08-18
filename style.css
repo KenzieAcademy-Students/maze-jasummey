@@ -1,7 +1,14 @@
+html {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
 .maze {
   display: grid;
   grid-template-columns: repeat(21, 30px);
   gap: 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .cell {
@@ -32,4 +39,13 @@
 .player {
   background-color: #0000ff;
   color: white;
+  border-radius: 50%;
+}
+
+.message {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 }
